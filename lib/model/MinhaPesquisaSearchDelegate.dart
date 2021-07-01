@@ -38,8 +38,10 @@ class MinhaPesquisaSearchDelegate extends SearchDelegate<String> {
   @override // Define sugestões de termos de pesquisa para o usuario
   //Este método é chamado cada vez q o usuario insere ou exclui uma letra no campo de busca
   Widget buildSuggestions(BuildContext context) {
-    //print("Resultado da pesquisa: " + query); // linha para conferência e aprendizado
+    return Container();
 
+    //print("Resultado da pesquisa: " + query); // linha para conferência e aprendizado
+    /*
     List<String> lista = [];
 
     if (query.isNotEmpty) {
@@ -48,6 +50,7 @@ class MinhaPesquisaSearchDelegate extends SearchDelegate<String> {
           .toList();
 
       return ListView.builder(
+        itemCount: lista.length,
         itemBuilder: (context, index) {
           return ListTile(
             title: Text(lista[index]),
@@ -56,12 +59,12 @@ class MinhaPesquisaSearchDelegate extends SearchDelegate<String> {
             },
           );
         },
-        itemCount: lista.length,
       );
     } else {
       return Center(
         child: Text("Sem resultados para esta pesquisa."),
       );
     }
+    */
   }
 }

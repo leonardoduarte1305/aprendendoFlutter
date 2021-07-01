@@ -5,6 +5,7 @@ import 'package:gasolina_alcool_entrada_dados/telasProjetoYoutube/EmAlta.dart';
 import 'package:gasolina_alcool_entrada_dados/telasProjetoYoutube/Inicio.dart';
 import 'package:gasolina_alcool_entrada_dados/telasProjetoYoutube/Inscricoes.dart';
 
+
 import 'model/MinhaPesquisaSearchDelegate.dart';
 
 class Home extends StatefulWidget {
@@ -48,7 +49,7 @@ class _HomeState extends State<Home> {
                 _resultado = resposta!;
               });
 
-              print("Veio da tela de busca: " + resposta!);
+              //print("Veio da tela de busca: " + resposta!);
             },
           )
           /*
